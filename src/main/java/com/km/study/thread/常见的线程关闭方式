@@ -1,0 +1,15 @@
+## 常见的线程关闭方式
+1. 等它结束 
+2. while(!isInterrupted)
+3. 设置一个volatile修饰的flag变量
+```
+private volatile boolean flag = false;
+while(!flag&&!isInterrupted()){
+    运行run
+}
+
+public void close(){
+    this.flag = true;
+    this.interrupt();
+}
+```
