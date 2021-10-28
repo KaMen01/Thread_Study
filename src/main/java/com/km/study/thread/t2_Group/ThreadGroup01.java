@@ -17,6 +17,7 @@ public class ThreadGroup01 {
         System.out.println("t1 thread belong group:"+t1.getThreadGroup().getName());
 
         System.out.println("t2 thread belong group:" + t2.getThreadGroup().getName());
+
     }
 
 }
