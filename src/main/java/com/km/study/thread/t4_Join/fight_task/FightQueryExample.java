@@ -19,9 +19,6 @@ public class FightQueryExample {
         List<String> results = search("SH","BJ");
         System.out.println("===============result===============");
         results.forEach(System.out::println);
-        results = search("NJ","TJ");
-        System.out.println("===============result2===============");
-        results.forEach(System.out::println);
     }
 
     private static List<String> search(String original, String destination) {
